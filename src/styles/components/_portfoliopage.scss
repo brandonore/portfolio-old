@@ -1,0 +1,89 @@
+.portfolio-div {
+    background-color: $main-dark;
+    // border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.portfolio-div h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.chii-body, .aurora-logo {
+    width: 30%;
+    height: 30%;
+}
+
+.row {
+    display: flex;
+    // border: 1px solid red;
+    width: 45%;
+    background: $nav-dark;
+}
+
+.row, .row > .column {
+    padding: 8px;
+}
+
+.row h2 {
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    font-size: $l-size;
+}
+
+.content {
+    // border: 1px solid green;
+    display: flex;
+}
+
+.content p {
+    color: #fff;
+    text-align: left;
+    padding: 5% 20px 0 20px;
+}
+
+.content-links {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 15px 10px 0;
+    color: #fff;
+    text-align: center;
+    // border: 1px solid yellow;
+}
+
+.content-links i {
+    font-size: 2.8rem;
+    transition: all .2s linear;
+}
+
+.content-links a {
+    color: #fff;
+}
+
+.content-links i:hover {
+    color: $main-pink;
+    cursor: pointer;
+}
+
+.content-links a:active, .content-links a:visited {
+    color: #fff;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

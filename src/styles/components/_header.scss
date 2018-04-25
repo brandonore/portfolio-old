@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    flex-direction: column;
+    // width: 15%;
+    min-width: 192px;
+    height: 100vh;
+    overflow: hidden;
+    background: $nav-dark;
+    margin: 0;
+    color: #fff;
+    border-right: 2px solid $main-pink;
+    position: relative;
+}
+
+canvas, button {
+    position: relative;
+}
+
+header a {
+    color: #fff;
+    padding: 15px 45px;
+}
+
+.sidenav {
+    // height: 100%;
+    width: 192px;
+    z-index: 2;
+}
+
+.sidenav .close-btn {
+    position: absolute;
+    top: -12px;
+    right: -34px;
+    margin-left: 50px;
+    font-size: 36px;
+}
+
+.home-img {
+    transform: scale(1, 0.42);
+    // -moz-transform: scale(1, 0.25);
+    // -webkit-transform: scale(1, 0.25);
+    margin: -100px 10% 20px 10%;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: -120px 0 0 0;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.nav-links a i {
+    padding-right: 5px;
+}
+
+.nav-social {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.45rem;
+    position: absolute;
+    width: 100%;
+    background: $main-dark;
+    padding: 15px 0;
+    bottom: 80px;
+    left: 0;
+    text-align: center;
+}
+
+.nav-social i {
+    color: $nav-dark;
+    font-size: $l-size;
+    transition: all .2s linear;
+}
+
+.nav-footer {
+    font-size: 1.45rem;
+    position: absolute;
+    width: auto;
+    // background: $main-dark;
+    padding: 15px;
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.nav-footer i {
+    transition: all .2s linear;
+}
+
+.nav-footer a, .nav-social a {
+    color: #fff;
+    padding: 0;
+}
+
+.nav-footer i:hover, .nav-social i:hover {
+    color: $main-pink;
+    cursor: pointer;
+}
+
+.nav-footer a:active, .nav-footer a:visited,
+.nav-social a:active, .nav-social a:visited {
+    color: #fff;
+}
