@@ -69,16 +69,13 @@
     transition: all .2s linear;
 }
 
-.content-links a {
-    color: #fff;
-}
-
 .content-links i:hover {
     color: $main-pink;
     cursor: pointer;
 }
 
-.content-links a:active, .content-links a:visited {
+.content-links a, .content-links a:active, 
+.content-links a:visited {
     color: #fff;
 }
 

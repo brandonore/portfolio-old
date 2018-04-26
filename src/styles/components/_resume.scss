@@ -1,0 +1,63 @@
+.resume-div {
+    background-color: $main-dark;
+    // border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.resume-div h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 40px 0;
+    // border: 1px solid blue;
+}
+
+.resume-content img {
+    width: 75%;
+    height: 75%;
+}
+
+.resume-content p {
+    color: #fff;
+    text-align: center;
+}
+
+.resume-sidebar {
+    width: auto;
+    text-align: center;
+    position: fixed;
+    top: 10.5%;
+    right: 5%;
+    // border: 1px solid red;
+}
+
+.resume-sidebar p {
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.resume-sidebar i {
+    color: #fff;
+    font-size: $l-size;
+    transition: all .2s linear;
+}
+
+.resume-sidebar i:hover {
+    color: $main-pink;
+    cursor: pointer;
+}
+
+.resume-sidebar a, .resume-sidebar a:active,
+.resume-sidebar a:visited {
+    color: #fff;
+}
