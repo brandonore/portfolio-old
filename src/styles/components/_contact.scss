@@ -1,4 +1,5 @@
 .contact-div {
+    font-family: 'Montserrat', sans-serif;
     background-color: $main-dark;
     // border: 1px solid red;
     width: 100%;
@@ -10,5 +11,129 @@
     color: #fff;
     text-align: center;
     font-weight: 300;
-    margin-top: 40px;
+    margin: 40px 0;
+}
+
+#contact-form {
+    background: $nav-dark;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    // padding: 0 0 20px 0;
+    // border: 1px solid green;
+}
+
+.contact-title {
+    padding: 20px 0;
+    background: $nav-dark;
+    // border: 1px solid $main-pink;
+}
+
+.contact-title h3 {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-size: $l-size;
+}
+
+label {
+    color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    position: relative;
+}
+
+.form-group input, textarea {
+    color: #fff;
+    width: 90%;
+    padding: 10px 0;
+    border: 0;
+    font-size: inherit;
+    font-family: inherit;
+    background: none;
+    border: 2px solid $main-dark;
+    // border-bottom: 2px solid $main-dark;
+    outline: none;
+    transition: .2s ease all;
+}
+
+.form-group input::placeholder {
+    color: transparent;
+    transition: .2s ease all;
+}
+
+.form-group label {
+    position: absolute;
+    left: 6%;
+    top: 20px;
+    color: #fff;
+    opacity: 0.3;
+    transition: all .2s ease;
+    pointer-events: none;
+}
+
+.form-group input:focus, textarea:focus {
+    border-bottom: 2px solid $main-pink;
+}
+
+.form-group input:focus + label,
+textarea:focus + label {
+    top: 0;
+    // left: 0;
+    font-size: .8rem;
+    color: transparent;
+    transition: all .2s ease;
+}
+
+.hidden {
+    top: 0;
+    font-size: .8rem;
+    color: transparent;
+    transition: all .2s ease;
+}
+
+.form-group input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #fff;
+    transition-delay: .1s;
+}
+
+// ::placeholder {
+//     font-weight: 100;
+//     font-size: $s-size;
+//     color: #fff;
+//     padding-left: 30px;
+//     opacity: 0.5;
+//     line-height: normal;
+// }
+
+.btn-contact {
+    width: 25%;
+    margin: 30px auto 40px auto;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    background: none;
+    border: 2px solid $main-pink;
+    transition: all .2s linear;
+    padding: 12px 25px;
+    font-size: $m-size;
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-contact:hover {
+    background-color: $main-pink;
+}
+
+.btn-contact:active, .btn-contact:visited {
+    text-decoration: none;
 }

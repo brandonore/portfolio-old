@@ -31,25 +31,40 @@ class ContactForm extends React.Component {
         document.getElementById('contact-form').reset();
     }
 
+    hidePlaceholderLabels(text) {
+        let labels = document.getElementsByTagName('LABEL');
+        for(let i = 0; i < labels.length; i++) {
+            if(labels[i].innerHTML == text) {
+                labels[i].classList.add('hidden');
+            } else {
+                labels[i].classList.remove('hidden');
+            }
+        }
+    }
+
     render() {
         return (
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <div className="contact-title"><h3>Contact Me!</h3></div>
                 <div className="form-group">
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" className="form-control" id="name"></input>
+                    <br/>
+                    <input type="text" name="name" onChange={this.hidePlaceholderLabels} className="form-control" id="name"></input>
+                    <label htmlFor="name">Name</label>
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" className="form-control" id="email"></input>
+                    <br/>
+                    <input type="email" name="email" onChange={this.hidePlaceholderLabels} className="form-control" id="email"></input>
+                    <label htmlFor="email">Email</label>
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="message">Message:</label>
-                    <input type="textarea" name="message" className="form-control" rows="5" id="message"></input>
+                    <br/>
+                    <textarea name="message" className="form-control" rows="8" cols="50" id="message"></textarea>
+                    <label htmlFor="message">Message</label>
                 </div>
 
-                <button type="submit" className="btn-contact">Submit</button>
+                <button type="submit" className="btn-contact"><i class="fas fa-paper-plane"></i></button>
             </form>
         )
     }

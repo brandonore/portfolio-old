@@ -8,4 +8,4 @@ const ContactPage = () => (
     </div>
 )
 
-export {ContactPage as default};
+export default ContactPage;
