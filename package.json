@@ -1,5 +1,5 @@
 {
-  "name": "expensify",
+  "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Brandon Ore",
@@ -10,6 +10,7 @@
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -20,14 +21,13 @@
     "file-loader": "^1.1.11",
     "live-server": "^1.2.0",
     "node-sass": "^4.5.3",
+    "nodemailer": "^4.6.4",
     "normalize.css": "^7.0.0",
     "particles.js": "^2.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-modal": "^2.2.2",
     "react-particles-js": "^2.1.2",
-    "react-pdf": "^3.0.4",
-    "react-pdf-js": "^3.0.7",
     "react-router-dom": "4.2.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
@@ -35,5 +35,15 @@
     "validator": "^8.0.0",
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonore/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brandonore/portfolio/issues"
+  },
+  "homepage": "https://github.com/brandonore/portfolio#readme",
+  "description": ""
 }
