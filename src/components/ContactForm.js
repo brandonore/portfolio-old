@@ -31,15 +31,18 @@ class ContactForm extends React.Component {
         document.getElementById('contact-form').reset();
     }
 
-    hidePlaceholderLabels(text) {
-        let labels = document.getElementsByTagName('LABEL');
-        for(let i = 0; i < labels.length; i++) {
-            if(labels[i].innerHTML == text) {
-                labels[i].classList.add('hidden');
-            } else {
-                labels[i].classList.remove('hidden');
-            }
-        }
+    hidePlaceholderLabels() {
+        const inputs = document.querySelectorAll('input[type="text"], input[type="email"], textarea');
+        [].forEach.call(inputs, input => {
+            const label = document.querySelector(`[for="${input.id}"]`);
+            input.addEventListener('input', function () {
+                if (this.value && this.value.length > 0) {
+                    label.setAttribute('hidden', '');
+                } else {
+                    label.removeAttribute('hidden');
+                }
+            });
+        });
     }
 
     render() {
@@ -48,19 +51,19 @@ class ContactForm extends React.Component {
                 <div className="contact-title"><h3>Contact Me!</h3></div>
                 <div className="form-group">
                     <br/>
-                    <input type="text" name="name" onChange={this.hidePlaceholderLabels} className="form-control" id="name"></input>
+                    <input type="text" name="name" className="form-control" id="name" onChange={this.hidePlaceholderLabels.bind(this)}></input>
                     <label htmlFor="name">Name</label>
                 </div>
 
                 <div className="form-group">
                     <br/>
-                    <input type="email" name="email" onChange={this.hidePlaceholderLabels} className="form-control" id="email"></input>
+                    <input type="email" name="email" className="form-control" id="email" onChange={this.hidePlaceholderLabels.bind(this)}></input>
                     <label htmlFor="email">Email</label>
                 </div>
 
                 <div className="form-group">
                     <br/>
-                    <textarea name="message" className="form-control" rows="8" cols="50" id="message"></textarea>
+                    <textarea name="message" className="form-control" rows="8" cols="50" id="message" onChange={this.hidePlaceholderLabels.bind(this)}></textarea>
                     <label htmlFor="message">Message</label>
                 </div>
 
