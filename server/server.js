@@ -1,8 +1,24 @@
+const path = require('path');
 const express = require('express');
+const app = express();
+const publicPath = path.join(__dirname, '..', 'public');
+const port = process.env.PORT || 3000;
 const router = express.Router();
 const nodemailer = require('nodemailer');
-const creds = require('../config/config');
+const creds = require('./config/config');
 
+// setup app
+app.use(express.static(publicPath));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(publicPath, 'index.html'));
+});
+
+app.listen(port, () => {
+    console.log('Server is running');
+});
+
+// nodemailer
 let transport = {
     host: 'smtp.gmail.com',
     port: 465,
@@ -49,5 +65,3 @@ router.post('/send', (req, res, next) => {
       }
     })
   })
-
-  module.exports = router;
