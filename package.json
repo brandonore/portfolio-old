@@ -25,7 +25,6 @@
     "file-loader": "^1.1.11",
     "live-server": "^1.2.0",
     "node-sass": "^4.5.3",
-    "nodemailer": "^4.6.4",
     "normalize.css": "^7.0.0",
     "particles.js": "^2.0.0",
     "react": "^16.0.0",
