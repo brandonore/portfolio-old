@@ -35,7 +35,6 @@ build/Release
 # Dependency directories and files
 node_modules/
 jspm_packages/
-back-end/config/config.js
 public/bundle.js
 public/bundle.js.map
 public/styles.css
@@ -64,3 +63,5 @@ typings/
 
 # next.js build output
 .next
+
+back-end/config/
