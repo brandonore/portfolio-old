@@ -6,7 +6,6 @@ const port = process.env.PORT || 3000;
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const creds = require('./config/config');
