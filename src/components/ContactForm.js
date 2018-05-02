@@ -11,7 +11,7 @@ class ContactForm extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:3000/send',
+            url: '/send',
             data: {
                 name,
                 email,
