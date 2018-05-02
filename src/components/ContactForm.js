@@ -11,7 +11,7 @@ class ContactForm extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'https://rocky-anchorage-67021.herokuapp.com/send',
+            url: 'http://localhost:3000/send',
             data: {
                 name,
                 email,
