@@ -4,7 +4,7 @@ import resume from '../../public/imgs/resume.png';
 const ResumePage = () => {
     return (
         <div className="resume-div">
-            <h1>Below you can find my resume</h1>
+            <h1>Resume</h1>
             <div className="resume-content">
                 <img src={resume} alt="personal resume"/>
             </div>

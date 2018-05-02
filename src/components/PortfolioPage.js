@@ -5,10 +5,9 @@ import aurora from '../../public/imgs/auroralogo.png';
 
 const PortfolioPage = () => (
     <div className="portfolio-div">
-        <h1>Here are some of my recent projects!</h1>
+        <h1>Projects</h1>
         <div className="portfolio-items">
             <div className="row">
-                
                 <div className="column">
                     <h2>Chii</h2>
                     <div className="content">
@@ -40,6 +39,7 @@ const PortfolioPage = () => (
                     <a href="https://github.com/brandonore/aurora/releases"><i className="fas fa-download"></i></a>
                 </div>
             </div>
+            {/*=================================================== */}
         </div>
     </div>
 )

@@ -1,8 +1,7 @@
 header {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    min-width: 250px;
+    min-width: 200px;
     height: 100vh;
     overflow-y: hidden;
     background: $nav-dark;
@@ -10,6 +9,7 @@ header {
     color: #fff;
     border-right: 2px solid $main-pink;
     position: relative;
+    z-index: 2;
 }
 
 canvas, button {
@@ -21,39 +21,47 @@ header a {
     padding: 15px 45px;
 }
 
-.sidenav {
-    // height: 100%;
-    width: 192px;
-    z-index: 2;
-}
+// .sidenav .close-btn {
+//     position: absolute;
+//     top: -12px;
+//     right: -34px;
+//     margin-left: 50px;
+//     font-size: 36px;
+// }
 
-.sidenav .close-btn {
-    position: absolute;
-    top: -12px;
-    right: -34px;
-    margin-left: 50px;
-    font-size: 36px;
+.img-div {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    // border: 1px solid red;
 }
 
 .home-img {
-    transform: scale(1, 0.42);
-    // -moz-transform: scale(1, 0.25);
-    // -webkit-transform: scale(1, 0.25);
-    margin: -100px 10% 20px 10%;
     border-radius: 50%;
 }
 
 .nav-links {
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin: -120px 0 0 0;
-    width: 100%;
+    margin: 0 0 0 0;
+    width: 200px;
     transition: 0.3s;
+    // border: 1px solid blueviolet;
 }
 
 .nav-links a i {
     padding-right: 5px;
+}
+
+.nav-bottom {
+    background: linear-gradient(to top, rgba(102, 51, 255, 0.1) 10%, rgba(255, 255, 255, 0) 90%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .nav-social {
@@ -61,39 +69,38 @@ header a {
     justify-content: space-around;
     text-align: center;
     font-size: 1.45rem;
-    position: absolute;
+    position: relative;
     width: 100%;
-    background: $main-dark;
+    // background: linear-gradient(to top, rgba(102, 51, 255, 0.1) 10%, rgba(255, 255, 255, 0) 90%);
     padding: 15px 0;
-    bottom: 80px;
-    left: 0;
+    margin: 0 auto;
+    // bottom: 0;
+    // left: 0;
     text-align: center;
 }
 
 .nav-social i {
-    color: $nav-dark;
+    color: #6A7390;
+    // opacity: .3;
     font-size: $l-size;
     transition: all .2s linear;
 }
 
 .nav-footer {
+    color: $light-gray;
     font-size: 1.45rem;
-    position: absolute;
     width: auto;
-    // background: $main-dark;
     padding: 15px;
-    margin-bottom: 10px;
-    bottom: 0;
-    left: 0;
     text-align: center;
 }
 
 .nav-footer i {
+    color: $light-gray;
     transition: all .2s linear;
 }
 
 .nav-footer a, .nav-social a {
-    color: #fff;
+    color: $light-gray;
     padding: 0;
 }
 
@@ -104,5 +111,5 @@ header a {
 
 .nav-footer a:active, .nav-footer a:visited,
 .nav-social a:active, .nav-social a:visited {
-    color: #fff;
+    color: $light-gray;
 }

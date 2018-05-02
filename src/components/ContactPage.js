@@ -3,9 +3,8 @@ import ContactForm from './ContactForm';
 
 const ContactPage = () => (
     <div className="contact-div">
-        <div className="form-div">
-            <ContactForm />
-        </div>
+        <h1>Contact</h1>
+        <ContactForm />
     </div>
 )
 

@@ -1,22 +1,35 @@
 .portfolio-div {
-    background-color: $main-dark;
-    // border: 1px solid red;
     width: 100%;
     height: 100vh;
+    background-color: $main-dark;
     margin: 0;
 }
 
 .portfolio-div h1 {
+    font-size: $xl-size;
     text-align: center;
     color: #fff;
     font-weight: 300;
     margin-top: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.portfolio-div h1:before {
+    content: '';
+    position: absolute;
+    width: 6%;
+    bottom: 0;
+    left: 47%;
+    border-bottom: 2px solid $main-pink;
 }
 
 .portfolio-items {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 40px 0 50px 0;
 }
 
 .chii-body, .aurora-logo {
@@ -26,9 +39,11 @@
 
 .row {
     display: flex;
-    // border: 1px solid red;
+    // margin-top: 4%;
     width: 45%;
     background: $nav-dark;
+    background-image: linear-gradient(to top, rgba(102, 51, 255, 0.1) 10%, rgba(255, 255, 255, 0) 90%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .row, .row > .column {
@@ -43,7 +58,6 @@
 }
 
 .content {
-    // border: 1px solid green;
     display: flex;
 }
 
@@ -61,7 +75,6 @@
     padding: 10px 15px 10px 0;
     color: #fff;
     text-align: center;
-    // border: 1px solid yellow;
 }
 
 .content-links i {
