@@ -9,6 +9,10 @@ const bodyParser = require('body-parser');
 const index = require('./routes/index');
 
 // setup app
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(express.static(publicPath));
 
 app.get('*', (req, res) => {
@@ -18,10 +22,3 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is listening on port: ${port}`);
 });
-
-// nodemailer
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use('/', index);
