@@ -11,7 +11,7 @@ import ResumePage from '../components/ResumePage';
 const AppRouter = () => (
     <BrowserRouter>
         <div className="main-container">
-            <Header />
+        <Header />
             <Switch>
                 <Route path="/" component={PortfolioHomePage} exact={true} />
                 <Route path="/portfolio" component={PortfolioPage} exact={true} />

@@ -3,6 +3,7 @@
     height: 100vh;
     background-color: $main-dark;
     margin: 0;
+    overflow-y: scroll;
 }
 
 .portfolio-div h1 {
@@ -43,7 +44,8 @@
     width: 45%;
     background: $nav-dark;
     background-image: linear-gradient(to top, rgba(102, 51, 255, 0.1) 10%, rgba(255, 255, 255, 0) 90%);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: 2px solid #263238;
 }
 
 .row, .row > .column {
@@ -96,4 +98,17 @@
     content: "";
     display: table;
     clear: both;
+}
+
+@media (max-width: 750px) {
+
+    .portfolio-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .row {
+        justify-content: space-around;
+        width: 100%;
+    }
 }

@@ -142,3 +142,13 @@ textarea:focus::placeholder {
 .btn-contact:active, .btn-contact:visited {
     text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+    .contact-div {
+        overflow-y: scroll;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+}

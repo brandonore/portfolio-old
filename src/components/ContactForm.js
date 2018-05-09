@@ -48,7 +48,7 @@ class ContactForm extends React.Component {
     render() {
         return (
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                <div className="contact-title"><h3>Drop me a line!</h3></div>
+                <div className="contact-title"><h3>Get in touch!</h3></div>
                 <div className="form-group">
                     <br/>
                     <input type="text" name="name" className="form-control" id="name" onChange={this.hidePlaceholderLabels.bind(this)}></input>

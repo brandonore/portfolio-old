@@ -71,3 +71,15 @@
 .resume-sidebar a:visited {
     color: #fff;
 }
+
+@media (max-width: 1024px) {
+    .resume-content img {
+        width: 100%;
+    }
+
+    .resume-sidebar {
+        top: -3%;
+        right: 0;
+        position: relative;
+    }
+}
