@@ -2,8 +2,21 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import chii from '../../public/imgs/chiibody.png';
 import aurora from '../../public/imgs/auroralogo.png';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
+
+let images = ['https://facebook.github.io/react/logo-og.png', 'http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg'];
+let captions = ['test1', 'test2'];
 
 class PortfolioPage extends React.Component {
+    constructor(props) {
+        super(props);
+     
+        this.state = {
+          photoIndex: 0,
+          isOpen: false,
+        };
+      }
 
     openNav() {
         document.getElementById("menu-btn").style.display = "none";
@@ -15,10 +28,31 @@ class PortfolioPage extends React.Component {
     }
 
     render() {
+        const { photoIndex, isOpen } = this.state;
+
         return (
             <div className="portfolio-div">
                 <a href="#" id="menu-btn" onClick={this.openNav}><i class="far fa-bars"></i></a>
                 <h1>Projects</h1>
+                {isOpen && (
+                    <Lightbox
+                      mainSrc={images[photoIndex]}
+                      nextSrc={images[(photoIndex + 1) % images.length]}
+                      prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                      onCloseRequest={() => this.setState({ isOpen: false })}
+                      onMovePrevRequest={() =>
+                        this.setState({
+                          photoIndex: (photoIndex + images.length - 1) % images.length,
+                        })
+                      }
+                      onMoveNextRequest={() =>
+                        this.setState({
+                          photoIndex: (photoIndex + 1) % images.length, 
+                        })
+                      }
+                      imageCaption={captions[this.state.photoIndex]}
+                    />
+                  )}
                 <div className="portfolio-items">
                     <div className="row">
                         <div className="column">
@@ -31,8 +65,8 @@ class PortfolioPage extends React.Component {
                             </div>
                         </div>
                         <div className="content-links">
-                            <i className="fab fa-github"></i>
-                            <i className="fas fa-image"></i>
+                            <a href="https://github.com/brandonore/chii"><i className="fab fa-github"></i></a>
+                            <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}></i>
                             <i className="fas fa-link"></i>
                         </div>
                     </div>
@@ -48,7 +82,7 @@ class PortfolioPage extends React.Component {
                         </div>
                         <div className="content-links">
                             <a href="https://github.com/brandonore/aurora"><i className="fab fa-github"></i></a>
-                            <i className="fas fa-image"></i>
+                            <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}></i>
                             <a href="https://github.com/brandonore/aurora/releases"><i className="fas fa-download"></i></a>
                         </div>
                     </div>
