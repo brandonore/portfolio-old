@@ -4,6 +4,7 @@
     width: 100%;
     height: 100vh;
     background-color: $main-dark;
+    overflow: hidden;
 }
 
 .contact-div h1 {
@@ -30,7 +31,7 @@
     background: $nav-dark;
     display: flex;
     flex-direction: column;
-    margin-top: 6%;
+    margin-top: 50px;
     width: 50%;
     max-width: 900px;
     border: 2px solid #263238;
@@ -127,7 +128,7 @@ textarea:focus::placeholder {
     display: block;
     font-family: 'Montserrat', sans-serif;
     background: none;
-    border: 2px solid #39D397;
+    border: 2px solid $main-green;
     transition: all .2s linear;
     padding: 12px 25px;
     font-size: $m-size;
@@ -136,19 +137,20 @@ textarea:focus::placeholder {
 }
 
 .btn-contact:hover {
-    background-color: #39D397;
+    background-color: $main-green;
 }
 
 .btn-contact:active, .btn-contact:visited {
     text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
     .contact-div {
         overflow-y: scroll;
     }
 
     #contact-form {
         width: 100%;
+        margin-top: 10px;
     }
 }

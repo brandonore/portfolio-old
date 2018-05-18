@@ -4,6 +4,7 @@
     background-color: $main-dark;
     margin: 0;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .portfolio-div h1 {
@@ -98,7 +99,7 @@
     clear: both;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1024px) {
 
     .portfolio-items {
         flex-direction: column;
