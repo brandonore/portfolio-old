@@ -4,6 +4,7 @@
     width: 100%;
     height: 100vh;
     background-color: $main-dark;
+    overflow: hidden;
 }
 
 .contact-div h1 {
@@ -30,7 +31,7 @@
     background: $nav-dark;
     display: flex;
     flex-direction: column;
-    margin-top: 6%;
+    margin-top: 50px;
     width: 50%;
     max-width: 900px;
     border: 2px solid #263238;
@@ -139,12 +140,13 @@ textarea:focus::placeholder {
     text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
     .contact-div {
         overflow-y: scroll;
     }
 
     #contact-form {
         width: 100%;
+        margin-top: 10px;
     }
 }

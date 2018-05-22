@@ -8,9 +8,12 @@ class PortfolioHomePage extends React.Component {
         return (
             <div className="home-div">
                 <div className="home-content">
-                    <h1>Hello! My name is <div className="name">Brandon Ore</div> and I make web stuff.</h1>
+                    <h1>Hello! My name is <div className="name">Brandon Ore</div> and I make web stuff. Currently available for work!</h1>
                     <Link to="/portfolio">
                         <button className="btn-main">View my projects <i class="fal fa-arrow-right home-arrow"></i></button>
+                    </Link>
+                    <Link to="/contact">
+                        <button className="btn-main2">Contact me <i class="fal fa-envelope home-arrow"></i></button>
                     </Link>
                 </div>
             <Particles width="90%"
