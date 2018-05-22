@@ -38,7 +38,7 @@
     height: 30%;
 }
 
-.row {
+.custom-row {
     display: flex;
     width: 45%;
     background: $nav-dark;
@@ -46,11 +46,11 @@
     border: 2px solid #263238;
 }
 
-.row, .row > .column {
+.custom-row, .custom-row > .custom-column {
     padding: 8px;
 }
 
-.row h2 {
+.custom-row h2 {
     color: #fff;
     font-weight: 400;
     text-align: center;
@@ -92,20 +92,20 @@
     color: #fff;
 }
 
-.row:after {
+.custom-row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
 
     .portfolio-items {
         flex-direction: column;
         width: 100%;
     }
 
-    .row {
+    .custom-row {
         justify-content: space-around;
         width: 100%;
     }

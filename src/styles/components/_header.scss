@@ -1,13 +1,12 @@
 header {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    min-width: 250px;
     height: 100vh;
     overflow: hidden;
     background: $nav-dark;
     margin: 0;
     color: #fff;
-    border-right: 2px solid $main-pink;
     position: relative;
     z-index: 2;
     transition: all .2s;
@@ -17,45 +16,9 @@ canvas, button {
     position: relative;
 }
 
-header a {
-    color: #fff;
-    padding: 15px 45px;
-}
-
-.close-btn {
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    display: none;
-    visibility: hidden;
-}
-
-.img-div {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 150px;
-    margin: 25px auto;
-}
-
 .home-img {
-    transform: scale(.9, .9);
+    width: 75%;
     border-radius: 50%;
-    border: 2px solid #263238;
-}
-
-.nav-links {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    margin: 50px 0 0 0;
-    width: 250px;
-    transition: .3s;
-}
-
-.nav-links a i {
-    padding-right: 5px;
 }
 
 .nav-bottom {
@@ -111,71 +74,122 @@ header a {
     color: $light-gray;
 }
 
-@media (max-width: 1024px) {
+.nav-side-menu {
+    overflow: hidden;
+    font-size: $m-size;
+    font-weight: 300;
+    background-color: $nav-dark;
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 100%;
+    color: #e1ffff;
+    border-right: 2px solid $main-pink;
+  }
+
+  .img-div {
+    background-color: #23282e;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    padding: 50px 0;
+    width: 100%;
+  }
+
+  .nav-side-menu .toggle-btn {
+    display: none;
+  }
+
+  .nav-side-menu ul,
+  .nav-side-menu li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 35px;
+    cursor: pointer;
+  }
+
+  .nav-side-menu ul :not(collapsed) .arrow:before,
+  .nav-side-menu li :not(collapsed) .arrow:before {
+    font-family: FontAwesome;
+    content: "\f078";
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+  }
+
+  .nav-side-menu li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    transition: all .3s linear;
+  }
+
+  .nav-side-menu li a {
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #e1ffff;
+  }
+
+  .nav-side-menu li a i {
+    padding-left: 10px;
+    width: 20px;
+    padding-right: 30px;
+  }
+
+  .nav-side-menu li:hover {
+    background-color: $main-pink;
+  }
+
+  @media (max-width: 767px) {
     header {
-        position: relative;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: 0;
-        overflow: hidden;
-        background: $nav-dark;
-        margin: 0;
-        color: #fff;
-        border-right: none;
-        border-bottom: 2px solid $main-pink;
-        position: relative;
-        z-index: 5;
-        transition: all .2s;
+        height: auto;
     }
 
-    .nav-links {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        margin: 0;
+    .nav-side-menu {
+      position: relative;
+      width: 100%;
+      border-bottom: 2px solid $main-pink;
+      border-right: none;
     }
 
-    .close-btn {
-        cursor: pointer;
-        top: 10px;
-        right: 30px;
-        display: block;
-        visibility: visible;
-        position: absolute;
-        font-size: 2.5rem;
-        z-index: 2;
+    .nav-side-menu li {
+        text-align: left;
+        border-bottom: 1px solid #23282e;
+    }
+
+    .nav-side-menu .toggle-btn {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 10 !important;
+      padding: 3px;
+      color: #fff;
+      text-align: center;
+      transition: all .2s linear;
+    }
+
+    .nav-side-menu .toggle-btn:hover {
+        color: $main-pink;
     }
 
     .img-div {
-        visibility: hidden;
-        display: none;
+        height: 60px;
+        padding: 0;
     }
 
-    .main-container {
-        display: flex;
-        flex-direction: column;
+    .home-img {
+      display: none;
     }
+  }
 
-    .nav-social, .nav-footer {
-        visibility: hidden;
-        display: none;
+  @media (min-width: 767px) {
+    .nav-side-menu .menu-list .menu-content {
+      display: block;
     }
-}
-
-@media (max-width: 680px) {
-    header {
-        height: 0;
-    }
-    .nav-links {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .nav-links a {
-        padding: 0 0 4px 0;
-    }
-}
+  }

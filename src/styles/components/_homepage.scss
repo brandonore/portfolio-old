@@ -3,17 +3,6 @@
     height: 100vh;
     background-color: $main-dark;
     margin: 0;
-    // position: absolute;
-    // background-color: $main-dark;
-    // // border: 1px solid red;
-    // width: 85%;
-    // height: 90%;
-    // overflow: hidden;
-    // z-index: 5;
-    // top: 5%;
-    // right: 2%;
-    // border-radius: 6px;
-    // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .home-content {
@@ -46,7 +35,6 @@
 
 .btn-main:hover {
     background: $main-pink;
-    // color: #1e272e;
 }
 
 .btn-main:active, .btn-main:visited {

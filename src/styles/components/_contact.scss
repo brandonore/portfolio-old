@@ -64,16 +64,18 @@ textarea {
 }
 
 .form-group input, textarea {
-    color: #fff;
-    width: 85%;
-    padding: 10px 0;
+    box-shadow: none !important;
+    outline: none !important;
+    color: #fff !important;
+    width: 85% !important;
+    padding: 10px 8px !important;
     border: 0;
-    font-size: inherit;
-    font-family: inherit;
-    background: none;
-    border: 2px solid $main-dark;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    background: none !important;
+    border: 2px solid $main-dark !important;
     outline: none;
-    transition: .2s ease all;
+    transition: .2s ease all !important;
 }
 
 .form-group input::placeholder {
@@ -83,7 +85,7 @@ textarea {
 
 .form-group label {
     position: absolute;
-    left: 7.5%;
+    left: 8.5%;
     top: 20px;
     color: #fff;
     opacity: 0.3;
@@ -92,7 +94,7 @@ textarea {
 }
 
 .form-group input:focus, textarea:focus {
-    border-bottom: 2px solid $main-pink;
+    border-bottom: 2px solid $main-pink !important;
 }
 
 .form-group input:focus + label,
@@ -101,12 +103,7 @@ textarea:focus + label {
     // left: 0;
     font-size: .8rem;
     color: transparent;
-    transition: all .2s ease;
-}
-
-.form-group input, .form-group textarea {
-    padding-left: 6px;
-    padding-right: 6px;
+    transition: all .2s ease !important;
 }
 
 label[hidden] {
@@ -120,14 +117,13 @@ textarea:focus::placeholder {
     transition-delay: .1s;
 }
 
-
 .btn-contact {
     width: 25%;
     margin: 30px auto 40px auto;
     display: block;
     font-family: 'Montserrat', sans-serif;
     background: none;
-    border: 2px solid #39D397;
+    border: 2px solid $main-green;
     transition: all .2s linear;
     padding: 12px 25px;
     font-size: $m-size;
@@ -136,7 +132,7 @@ textarea:focus::placeholder {
 }
 
 .btn-contact:hover {
-    background-color: #39D397;
+    background-color: $main-green;
 }
 
 .btn-contact:active, .btn-contact:visited {

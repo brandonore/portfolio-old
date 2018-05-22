@@ -18,21 +18,11 @@ class PortfolioPage extends React.Component {
         };
       }
 
-    openNav() {
-        document.getElementById("menu-btn").style.display = "none";
-        if(screen.width <= 1024 && screen.width > 680) {
-            document.getElementById("header").style.height = "48.4px";
-        } else if(screen.width <= 680) {
-            document.getElementById("header").style.height = "150px";
-        }
-    }
-
     render() {
         const { photoIndex, isOpen } = this.state;
 
         return (
             <div className="portfolio-div">
-                <a href="#" id="menu-btn" onClick={this.openNav}><i class="far fa-bars"></i></a>
                 <h1>Projects</h1>
                 {isOpen && (
                     <Lightbox
@@ -54,8 +44,8 @@ class PortfolioPage extends React.Component {
                     />
                   )}
                 <div className="portfolio-items">
-                    <div className="row">
-                        <div className="column">
+                    <div className="custom-row">
+                        <div className="custom-column">
                             <h2>Chii</h2>
                             <div className="content">
                                 <img src={chii} alt="chii logo" className="chii-body" />
@@ -70,8 +60,8 @@ class PortfolioPage extends React.Component {
                             <i className="fas fa-link"></i>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="column">
+                    <div className="custom-row">
+                        <div className="custom-column">
                             <h2>Aurora</h2>
                             <div className="content">
                                 <img src={aurora} alt="aurora logo" className="aurora-logo" />
