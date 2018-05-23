@@ -38,7 +38,8 @@ a:hover {
 }
 
 .is-active {
-    border-left: 2px solid $main-green;
+    background: $main-dark;
+    border-left: 3px solid $main-pink !important;
 }
 
 @media (max-width: 767px) {
@@ -46,7 +47,7 @@ a:hover {
         flex-direction: column;
     }
     .is-active {
-        background: none;
-        border-left: 2px solid $main-green;
+        background: $main-dark;
+        border-left: 2px solid $main-pink;
     }
 }

@@ -44,6 +44,7 @@ class PortfolioPage extends React.Component {
                     />
                   )}
                 <div className="portfolio-items">
+                    
                     <div className="custom-row">
                         <div className="custom-column">
                             <h2>Chii</h2>
@@ -52,6 +53,7 @@ class PortfolioPage extends React.Component {
                                 <p>Culpa voluptate ut sit mollit sint quis. Adipisicing ullamco veniam aute officia velit cillum cillum in tempor. 
                                 Quis incididunt ipsum ullamco tempor dolor cillum pariatur in est. Consectetur reprehenderit quis veniam aliqua nisi 
                                 aliqua pariatur irure eiusmod.</p>
+                                <div className="overlay"></div>
                             </div>
                         </div>
                         <div className="content-links">
@@ -60,6 +62,7 @@ class PortfolioPage extends React.Component {
                             <i className="fas fa-link"></i>
                         </div>
                     </div>
+                        
                     <div className="custom-row">
                         <div className="custom-column">
                             <h2>Aurora</h2>
@@ -68,6 +71,7 @@ class PortfolioPage extends React.Component {
                                 <p>Culpa voluptate ut sit mollit sint quis. Adipisicing ullamco veniam aute officia velit cillum cillum in tempor. 
                                 Quis incididunt ipsum ullamco tempor dolor cillum pariatur in est. Consectetur reprehenderit quis veniam aliqua nisi 
                                 aliqua pariatur irure eiusmod.</p>
+                                <div className="overlay"></div>
                             </div>
                         </div>
                         <div className="content-links">

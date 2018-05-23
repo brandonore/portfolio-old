@@ -4,7 +4,6 @@ header {
     min-width: 250px;
     height: 100vh;
     overflow: hidden;
-    background: $nav-dark;
     margin: 0;
     color: #fff;
     position: relative;
@@ -16,9 +15,25 @@ canvas, button {
     position: relative;
 }
 
+.img-div {
+    background-color: $nav-black;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    padding: 25px 0 15px 0;
+    width: 100%;
+    border-bottom: 1px solid $main-dark;
+  }
+
 .home-img {
-    width: 75%;
+    width: 65%;
     border-radius: 50%;
+}
+
+.img-text h3 {
+    margin: 25px 0 -12px 0;
+    padding: 0;
 }
 
 .nav-bottom {
@@ -78,82 +93,61 @@ canvas, button {
     overflow: hidden;
     font-size: $m-size;
     font-weight: 300;
-    background-color: $nav-dark;
+    background: $nav-black;
     position: fixed;
     top: 0px;
     width: 250px;
     height: 100%;
     color: #e1ffff;
-    border-right: 2px solid $main-pink;
-  }
-
-  .img-div {
-    background-color: #23282e;
-    line-height: 50px;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    padding: 50px 0;
-    width: 100%;
   }
 
   .nav-side-menu .toggle-btn {
     display: none;
   }
 
-  .nav-side-menu ul,
-  .nav-side-menu li {
+.nav-side-menu ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
     line-height: 35px;
     cursor: pointer;
-  }
+}
 
-  .nav-side-menu ul :not(collapsed) .arrow:before,
-  .nav-side-menu li :not(collapsed) .arrow:before {
-    font-family: FontAwesome;
-    content: "\f078";
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    vertical-align: middle;
-  }
-
-  .nav-side-menu li {
+.nav-side-menu a {
+    display: flex;
     text-align: center;
     width: 100%;
-    padding: 10px 0;
-    transition: all .3s linear;
-  }
-
-  .nav-side-menu li a {
-    padding: 15px 45px;
+    padding: 8px 15px;
+    border-left: 3px solid transparent;
+    transition: all .2s linear;
     text-decoration: none;
     color: #e1ffff;
-  }
+}
 
-  .nav-side-menu li a i {
-    padding-left: 10px;
-    width: 20px;
-    padding-right: 30px;
-  }
+.nav-side-menu a i {
+    margin: auto 15px auto 0;
+}
 
-  .nav-side-menu li:hover {
-    background-color: $main-pink;
-  }
+.nav-side-menu a:hover {
+    border-left: 3px solid $main-pink;
+    background-color: $main-dark;
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     header {
         width: 100%;
         height: auto;
     }
 
+    .img-text h3 {
+        margin: 12px 0 -12px 0;
+    }
+
     .nav-side-menu {
-      position: relative;
-      width: 100%;
-      border-bottom: 2px solid $main-pink;
-      border-right: none;
+        position: relative;
+        width: 100%;
+        border-bottom: 2px solid $main-pink;
+        border-right: none;
     }
 
     .nav-side-menu li {
@@ -162,16 +156,16 @@ canvas, button {
     }
 
     .nav-side-menu .toggle-btn {
-      display: block;
-      cursor: pointer;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      z-index: 10 !important;
-      padding: 3px;
-      color: #fff;
-      text-align: center;
-      transition: all .2s linear;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 10 !important;
+        padding: 3px;
+        color: #fff;
+        text-align: center;
+        transition: all .2s linear;
     }
 
     .nav-side-menu .toggle-btn:hover {
@@ -184,12 +178,12 @@ canvas, button {
     }
 
     .home-img {
-      display: none;
+        display: none;
     }
-  }
+}
 
-  @media (min-width: 767px) {
+@media (min-width: 767px) {
     .nav-side-menu .menu-list .menu-content {
-      display: block;
+        display: block;
     }
-  }
+}

@@ -1,7 +1,7 @@
 .portfolio-div {
     width: 100%;
     height: 100vh;
-    background-color: $main-dark;
+    background: radial-gradient(at top left, $main-dark, $nav-black);
     margin: 0;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -40,11 +40,29 @@
 }
 
 .custom-row {
+    position: relative;
     display: flex;
     width: 45%;
-    background: $nav-dark;
-    background-image: linear-gradient(to top, rgba(102, 51, 255, 0.1) 10%, rgba(255, 255, 255, 0) 90%);
-    border: 2px solid #263238;
+    background: $nav-black;
+    transition: all .2s linear;
+    // background: linear-gradient(at top, $main-dark, $nav-black);
+    // border: 2px solid $nav-black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(to top, $main-pink, transparent);;
+}
+
+.custom-row:hover .overlay {
+    cursor: pointer;
+    opacity: .2;
 }
 
 .custom-row, .custom-row > .custom-column {
@@ -76,6 +94,7 @@
     padding: 10px 15px 10px 0;
     color: #fff;
     text-align: center;
+    z-index: 2;
 }
 
 .content-links i {
