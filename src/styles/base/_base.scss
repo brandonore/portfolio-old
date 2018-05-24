@@ -22,7 +22,13 @@ button:disabled {
 }
 
 a {
+    font-weight: 500;
     text-decoration: none;
+    transition: all .1s linear;
+}
+
+a:visited, a:link {
+    color: $main-pink;
 }
 
 a:hover {

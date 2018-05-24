@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom';
 import cropped from '../../public/imgs/cropped.png';
 import $ from 'jquery';
 import '../../node_modules/bootstrap/dist/js/bootstrap';
+import CommitActivity from './CommitActivity';
 
 class Header extends React.Component {
 
@@ -22,6 +23,10 @@ class Header extends React.Component {
                             <NavLink to="/resume" activeClassName="is-active" exact={true}><i class="fal fa-file-pdf"></i>Resume</NavLink>
                             <NavLink to="/contact" activeClassName="is-active" exact={true}><i class="fal fa-envelope"></i>Contact</NavLink> 
                         </ul>
+                    </div>
+                    <div className="trend">
+                        <div className="commit-title">Github commit activity</div>
+                        <CommitActivity />
                     </div>
                     <div className="nav-bottom">
                         <div className="nav-social">

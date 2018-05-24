@@ -30,23 +30,21 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-content: space-around;
     margin: 40px 0 50px 0;
 }
 
 .chii-body, .aurora-logo {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    margin: auto 0;
+    padding: 0;
 }
 
 .custom-row {
     position: relative;
     display: flex;
-    width: 45%;
+    width: 40%;
     background: $nav-black;
     transition: all .2s linear;
-    // background: linear-gradient(at top, $main-dark, $nav-black);
-    // border: 2px solid $nav-black;
 }
 
 .overlay {
@@ -57,7 +55,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: linear-gradient(to top, $main-pink, transparent);;
+    background: linear-gradient(to left, $main-pink, transparent);;
 }
 
 .custom-row:hover .overlay {
@@ -76,6 +74,10 @@
     font-size: $l-size;
 }
 
+.custom-column h2 {
+    margin-bottom: -15px;
+}
+
 .content {
     display: flex;
 }
@@ -84,6 +86,13 @@
     color: #fff;
     text-align: left;
     padding: 5% 20px 0 20px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.content a:hover {
+    color: #fff;
+    opacity: .8;
 }
 
 .content-links {
@@ -91,6 +100,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: auto 0;
     padding: 10px 15px 10px 0;
     color: #fff;
     text-align: center;

@@ -50,9 +50,11 @@ class PortfolioPage extends React.Component {
                             <h2>Chii</h2>
                             <div className="content">
                                 <img src={chii} alt="chii logo" className="chii-body" />
-                                <p>Culpa voluptate ut sit mollit sint quis. Adipisicing ullamco veniam aute officia velit cillum cillum in tempor. 
-                                Quis incididunt ipsum ullamco tempor dolor cillum pariatur in est. Consectetur reprehenderit quis veniam aliqua nisi 
-                                aliqua pariatur irure eiusmod.</p>
+                                <p>Chii is a multi-purpose Discord bot featuring moderation, anime, gaming, gambling, nsfw and more!
+                                Click the link icon to the right to view the documentation.
+                                <br/>
+                                <br/>
+                                <i><b>Technologies used:</b></i>&nbsp; javascript & the <a href="https://discord.js.org">Discord.js</a> module.</p>
                                 <div className="overlay"></div>
                             </div>
                         </div>
@@ -68,9 +70,11 @@ class PortfolioPage extends React.Component {
                             <h2>Aurora</h2>
                             <div className="content">
                                 <img src={aurora} alt="aurora logo" className="aurora-logo" />
-                                <p>Culpa voluptate ut sit mollit sint quis. Adipisicing ullamco veniam aute officia velit cillum cillum in tempor. 
-                                Quis incididunt ipsum ullamco tempor dolor cillum pariatur in est. Consectetur reprehenderit quis veniam aliqua nisi 
-                                aliqua pariatur irure eiusmod.</p>
+                                <p>A simple, minimal desktop cryptocurrency tracker built with the Electron framework.
+                                View the github for a detailed readme. Download available for Windows and macOS.
+                                <br/>
+                                <br/>
+                                <i><b>Technologies used:</b></i>&nbsp; javascript, <a href="https://electronjs.org">Electron</a> & <a href="https://nodejs.org">Node JS</a></p>
                                 <div className="overlay"></div>
                             </div>
                         </div>

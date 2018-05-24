@@ -143,6 +143,18 @@ canvas, button {
     padding: 0;
 }
 
+.trend {
+    font-size: $s-size;
+    border-top: 1px solid $main-dark;
+    text-align: center;
+    padding-top: 30px; 
+}
+
+.commit-title {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
 @media (max-width: 767px) {
     header {
         width: 100%;
@@ -158,11 +170,6 @@ canvas, button {
         width: 100%;
         border-bottom: 2px solid $main-pink;
         border-right: none;
-    }
-
-    .nav-side-menu li {
-        text-align: left;
-        border-bottom: 1px solid #23282e;
     }
 
     .nav-side-menu .toggle-btn {
