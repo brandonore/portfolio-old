@@ -7,7 +7,7 @@ class CommitActivity extends React.Component {
         super();
 
         this.state = {
-            data: [0,0]
+            data: [0,0,0]
         }
     }
 
@@ -34,7 +34,7 @@ class CommitActivity extends React.Component {
             <Trend
                 smooth
                 autoDraw
-                autoDrawDuration={2000}
+                autoDrawDuration={3000}
                 autoDrawEasing="ease-out"
                 data={data}
                 gradient={['#8a2387', '#e94057', '#f27121']}

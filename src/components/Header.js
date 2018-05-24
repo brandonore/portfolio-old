@@ -26,7 +26,9 @@ class Header extends React.Component {
                     </div>
                     <div className="trend">
                         <div className="commit-title">Github commit activity</div>
-                        <CommitActivity />
+                        <div className="trend-line">
+                            <CommitActivity />
+                        </div>
                     </div>
                     <div className="nav-bottom">
                         <div className="nav-social">

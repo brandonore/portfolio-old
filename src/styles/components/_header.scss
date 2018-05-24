@@ -23,7 +23,6 @@ canvas, button {
     font-size: 14px;
     padding: 25px 0 15px 0;
     width: 100%;
-    border-bottom: 1px solid $main-dark;
   }
 
 .home-img {
@@ -34,6 +33,11 @@ canvas, button {
 .img-text h3 {
     margin: 25px 0 -12px 0;
     padding: 0;
+}
+
+.menu-list {
+    border-top: 1px solid $main-dark;
+    border-bottom: 1px solid $main-dark;
 }
 
 .nav-bottom {
@@ -145,9 +149,13 @@ canvas, button {
 
 .trend {
     font-size: $s-size;
-    border-top: 1px solid $main-dark;
     text-align: center;
     padding-top: 30px; 
+}
+
+.trend-line {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .commit-title {
@@ -195,6 +203,10 @@ canvas, button {
     }
 
     .home-img {
+        display: none;
+    }
+
+    .trend {
         display: none;
     }
 
