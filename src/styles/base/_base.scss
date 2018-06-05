@@ -44,8 +44,8 @@ a:hover {
 }
 
 .is-active {
-    background: #485563;
-    border-left: 3px solid $main-pink !important;
+    // background: $main-dark;
+    border-left: 3px solid #FF416C !important;
 }
 
 @media (max-width: 767px) {
@@ -53,7 +53,7 @@ a:hover {
         flex-direction: column;
     }
     .is-active {
-        background: $main-dark;
+        // background: $main-dark;
         border-left: 2px solid $main-pink;
     }
 }

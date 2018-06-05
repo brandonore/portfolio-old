@@ -1,24 +1,41 @@
 .home-div {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(#485563, #29323c);
+    // background: linear-gradient(to bottom right, $main-dark, #313A5A);
+    background: $main-dark;
     margin: 0;
 }
 
+// .home-overlay {
+//     // background: linear-gradient(to bottom right, #fc00ff, #00dbde);
+//     background: $main-dark;
+//     height: 100vh;
+//     opacity: .8;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+// }
+
 .home-content {
-    text-align: center;
-    width: 75%;
+    text-align: left;
+    width: 65%;
+    max-width: 1170px;
     position: relative;
-    margin: 0 auto;
-    top: 40%;
+    margin: auto auto;
+    top: 20%;
+    z-index: 2;
+    background: linear-gradient(to bottom right, #FF416C, #FF4B2B);
+    box-shadow: 0px 1px 5px 0px #676767;
+    padding: 80px 15px;
 }
 
 .home-content h1 {
-    text-align: center;
+    text-align: left;
     font-weight: 200;
-    letter-spacing: .3rem;
-    color: #fff;
-    margin: 0;
+    // letter-spacing: .3rem;
+    color: $main-dark;
+    margin: 0 60px;
     font-size: 5rem;
     span {
         font-weight: 600;
@@ -26,9 +43,9 @@
 }
 
 .home-content p {
-    color: #fff;
+    color: $main-white;
     font-size: 2rem;
-    margin: 10px 0 20px 0;
+    margin: 40px 0 40px 60px;
 }
 
 .btn-main {
@@ -46,13 +63,13 @@
 
 .btn-main2 {
     display: inline;
-    margin: 0 auto;
+    margin: 0 0 0 60px;
     background: none;
-    border: 2px solid $main-green;
+    border: 2px solid $main-white;
     transition: all .2s linear;
     padding: 12px 51px;
     font-size: $m-size;
-    color: #fff;
+    color: $main-white;
     z-index: 1;
 }
 
@@ -61,8 +78,8 @@
 }
 
 .btn-main2:hover {
-    background: $main-green;
-    color: #fff;
+    background: $main-white;
+    color: #FF416C;
 }
 
 .btn-main:active, .btn-main:visited,
@@ -89,11 +106,11 @@
         margin: 0 auto;
         width: 80%;
         left: 0;
-        top: 25%;
+        top: 20%;
     }
 
     .home-content h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-bottom: 30px;
     }
 
