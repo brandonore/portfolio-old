@@ -13,25 +13,23 @@ class PortfolioHomePage extends React.Component {
         }
         return (
             <div className="home-div">
-                
                 <div className="home-content">
                     <h1>Hello, my name is Brandon Ore. <br /> I am a <span>Web Developer</span></h1>
                     <p>Available for hire! <br />Want to work with me? Click below.</p>
-                    
                     <Link to="/contact">
                         <button className="btn-main2">Contact me <i className="fal fa-envelope home-arrow"></i></button>
                     </Link>
                 </div>
-                <div className="home-overlay"></div>
             <Particles width="90%"
             params={{
                 particles: {
                     number: {
-                        value: 80
+                        value: 100
                     },
                     line_linked: {
-                        opacity: 0.3,
-                        color: '#000'
+                        opacity: 0.5,
+                        color: '#262626',
+                        width: '1'
                     }
                 }
             }}

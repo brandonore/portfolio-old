@@ -12,7 +12,7 @@ class ResumePage extends React.Component {
                 </div>
                 <div className="resume-sidebar">
                     <p>PDF</p>
-                    <a href={require('../../public/imgs/resume.pdf')} download="resume.pdf"><i class="fas fa-download"></i></a>
+                    <a href={require('../../public/imgs/resume.pdf')} download="resume.pdf"><i className="fas fa-download"></i></a>
                 </div>
             </div>
         )

@@ -67,7 +67,7 @@ class ContactForm extends React.Component {
                     <label htmlFor="message">Message</label>
                 </div>
 
-                <button type="submit" className="btn-contact"><i class="fas fa-paper-plane"></i></button>
+                <button type="submit" className="btn-contact"><i className="fas fa-paper-plane"></i></button>
             </form>
         )
     }
