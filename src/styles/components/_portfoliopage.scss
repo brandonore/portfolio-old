@@ -1,7 +1,7 @@
 .portfolio-div {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(#485563, #29323c);
+    background: $main-dark;
     margin: 0;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -10,7 +10,7 @@
 .portfolio-div h1 {
     font-size: $xl-size;
     text-align: center;
-    color: #fff;
+    color: $nav-black;
     font-weight: 300;
     margin-top: 40px;
     position: relative;
@@ -33,7 +33,8 @@
     margin: 40px 0 50px 0;
 }
 
-.chii-body, .aurora-logo {
+.chii-body, .aurora-logo,
+.usd-logo, .twitter-logo {
     width: 40%;
     margin: auto 0;
     padding: 0;
@@ -41,10 +42,12 @@
 
 .custom-row {
     position: relative;
+    margin: 30px auto;
     display: flex;
     width: 40%;
     background: $nav-black;
     transition: all .2s linear;
+    z-index: 2;
 }
 
 .overlay {
@@ -55,12 +58,12 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: linear-gradient(to left, $main-pink, transparent);;
+    background: $main-pink;
+    z-index: 5;
 }
 
 .custom-row:hover .overlay {
-    cursor: pointer;
-    opacity: .2;
+    opacity: .9;
 }
 
 .custom-row, .custom-row > .custom-column {
@@ -68,14 +71,10 @@
 }
 
 .custom-row h2 {
-    color: #fff;
+    color: $main-white;
     font-weight: 400;
     text-align: center;
     font-size: $l-size;
-}
-
-.custom-column h2 {
-    margin-bottom: -15px;
 }
 
 .content {
@@ -83,7 +82,7 @@
 }
 
 .content p {
-    color: #fff;
+    color: $main-white;
     text-align: left;
     padding: 5% 20px 0 20px;
     font-weight: 400;
@@ -91,35 +90,39 @@
 }
 
 .content a:hover {
-    color: #fff;
+    color: $main-white;
     opacity: .8;
 }
 
 .content-links {
-    height: 200px;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto 0;
-    padding: 10px 15px 10px 0;
-    color: #fff;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: $main-white;
     z-index: 2;
 }
 
+.clinks-container {
+    padding: 80px;
+    border: 1px solid $main-white;
+}
+
 .content-links i {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     transition: all .2s linear;
+    padding: 0 15px;
 }
 
 .content-links i:hover {
-    color: $main-pink;
+    opacity: .6;
     cursor: pointer;
 }
 
 .content-links a, .content-links a:active, 
 .content-links a:visited {
-    color: #fff;
+    color: $main-white;
 }
 
 .custom-row:after {
