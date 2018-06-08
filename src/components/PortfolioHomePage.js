@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Particles from 'react-particles-js';
-import homeBg from '../../public/imgs/home-bg2.jpg';
 
 class PortfolioHomePage extends React.Component {
 
