@@ -108,9 +108,9 @@ class PortfolioPage extends React.Component {
                                 <div className="overlay">
                                     <div className="content-links">
                                         <div className="clinks-container">
-                                            <a href="https://github.com/brandonore/chii"><i className="fab fa-github"></i></a>
+                                            <a href="https://github.com/brandonore/expensify-app"><i className="fab fa-github"></i></a>
                                             <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}></i>
-                                            <i className="fas fa-link"></i>
+                                            <a href="http://expensify.brandonore.io"><i className="fas fa-link"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -130,9 +130,8 @@ class PortfolioPage extends React.Component {
                                 <div className="overlay">
                                     <div className="content-links">
                                         <div className="clinks-container">
-                                            <a href="https://github.com/brandonore/chii"><i className="fab fa-github"></i></a>
+                                            <a href="https://github.com/brandonore/Twitter-Interface"><i className="fab fa-github"></i></a>
                                             <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}></i>
-                                            <i className="fas fa-link"></i>
                                         </div>
                                     </div>
                                 </div>
