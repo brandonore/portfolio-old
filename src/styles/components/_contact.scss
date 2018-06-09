@@ -31,7 +31,7 @@
     background: $nav-black;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 50%;
     max-width: 900px;
     z-index: 2;
@@ -120,7 +120,7 @@ textarea:focus::placeholder {
 
 .btn-contact {
     width: 25%;
-    margin: 30px auto 40px auto;
+    margin: 20px auto 40px auto;
     display: block;
     font-family: 'Montserrat', sans-serif;
     background: none;
@@ -140,6 +140,25 @@ textarea:focus::placeholder {
     text-decoration: none;
 }
 
+@media (max-height: 800px) {
+    #contact-form {
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
+@media (max-height: 720px) {
+    #message {
+        line-height: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    #contact-form {
+        width: 80%;
+    }
+}
+
 @media (max-width: 767px) {
     .contact-div {
         overflow-y: scroll;
@@ -150,3 +169,4 @@ textarea:focus::placeholder {
         margin-top: 10px;
     }
 }
+

@@ -1,19 +1,39 @@
 import React from 'react';
 import resume from '../../public/imgs/resume.png';
+import Particles from 'react-particles-js';
 
 class ResumePage extends React.Component {
 
     render() {
         return (
-            <div className="resume-div">
-                <h1>Resume</h1>
+            <div className="resume-div"> 
                 <div className="resume-content">
+                    <h1>Resume</h1>
                     <img src={resume} alt="personal resume"/>
+                    <div className="resume-sidebar">
+                        <p>PDF</p>
+                        <a href={require('../../public/imgs/resume.pdf')} download="resume.pdf"><i className="fas fa-download"></i></a>
+                    </div>
                 </div>
-                <div className="resume-sidebar">
-                    <p>PDF</p>
-                    <a href={require('../../public/imgs/resume.pdf')} download="resume.pdf"><i className="fas fa-download"></i></a>
-                </div>
+                <Particles width="90%"
+                    params={{
+                        particles: {
+                            number: {
+                                value: 100
+                            },
+                            line_linked: {
+                                opacity: 0.5,
+                                color: '#262626',
+                                width: '1'
+                            }
+                        }
+                    }}
+                    style={{
+                        position: 'fixed',
+                        right: 0,
+                        top: 0,
+                        zIndex: 0
+                }}/>
             </div>
         )
     }

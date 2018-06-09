@@ -131,15 +131,48 @@
     clear: both;
 }
 
+@media (max-height: 800px) {
+    .portfolio-items {
+        flex-direction: column;
+    }
+
+    .custom-row {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .portfolio-items {
+        flex-direction: column;
+    }
+
+    .custom-row {
+        width: 90%;
+    }
+}
+
 @media (max-width: 767px) {
 
     .portfolio-items {
         flex-direction: column;
-        width: 100%;
+        // width: 100%;
     }
 
     .custom-row {
         justify-content: space-around;
         width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .custom-column .content {
+        flex-direction: column;
+        > img {
+            margin: 0 auto;
+        }
+    }
+
+    .clinks-container {
+        padding: 40px 50px;
     }
 }

@@ -45,8 +45,6 @@ canvas, button {
 }
 
 .nav-bottom {
-    // background: linear-gradient(to top, rgba(102, 51, 255, 0.1) 10%, rgba(255, 255, 255, 0) 90%);
-    // background: linear-gradient(to top, rgba(255, 65, 109, 0.288), rgba(255, 255, 255, 0));
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -99,6 +97,8 @@ canvas, button {
 }
 
 .nav-side-menu {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     font-size: $m-size;
     font-weight: 300;
@@ -106,7 +106,7 @@ canvas, button {
     position: fixed;
     top: 0px;
     width: 250px;
-    height: 100%;
+    height: 100vh;
     color: $main-dark;
   }
 
@@ -191,6 +191,20 @@ canvas, button {
     text-align: center;
 }
 
+@media (max-height: 1024px) {
+ 
+}
+
+@media (max-height: 800px) {
+    .github-content {
+        display: none;
+    }
+    
+    .trend {
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
     header {
         width: 100%;
@@ -214,6 +228,8 @@ canvas, button {
         width: 100%;
         border-bottom: 2px solid $main-pink;
         border-right: none;
+        height: auto;
+        padding-bottom: 15px;
     }
 
     .nav-side-menu .toggle-btn {

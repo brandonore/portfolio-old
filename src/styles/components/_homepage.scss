@@ -21,7 +21,6 @@
 .home-content h1 {
     text-align: left;
     font-weight: 200;
-    // letter-spacing: .3rem;
     color: $main-dark;
     margin: 0 60px;
     font-size: 5rem;
@@ -106,5 +105,17 @@
     .btn-main, .btn-main2 {
         display: block;
         margin: 15px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-content {
+        padding: 20px 10px;
+        top: 10%;
+        > h1, p {
+            margin: 0;
+            padding-bottom: 10px;
+            padding-left: 15px;
+        }
     }
 }
