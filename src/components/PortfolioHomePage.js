@@ -5,11 +5,7 @@ import Particles from 'react-particles-js';
 class PortfolioHomePage extends React.Component {
 
     render() {
-        const style1 = {
-            backgroundImage: `url(${homeBg})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-        }
+    
         return (
             <div className="home-div">
                 <div className="home-content">
@@ -20,23 +16,23 @@ class PortfolioHomePage extends React.Component {
                     </Link>
                 </div>
             <Particles width="90%"
-            params={{
-                particles: {
-                    number: {
-                        value: 100
-                    },
-                    line_linked: {
-                        opacity: 0.5,
-                        color: '#262626',
-                        width: '1'
+                params={{
+                    particles: {
+                        number: {
+                            value: 100
+                        },
+                        line_linked: {
+                            opacity: 0.5,
+                            color: '#262626',
+                            width: '1'
+                        }
                     }
-                }
-            }}
-            style={{
-                position: 'fixed',
-                right: 0,
-                top: 0,
-                zIndex: 0
+                }}
+                style={{
+                    position: 'fixed',
+                    right: 0,
+                    top: 0,
+                    zIndex: 0
             }}/>
             </div>
         )
