@@ -48,6 +48,11 @@ a:hover {
     border-left: 3px solid #FF416C !important;
 }
 
+.svg-inline--fa {
+    position: relative;
+    top: .125em
+}
+
 @media (max-width: 767px) {
     .main-container {
         flex-direction: column;

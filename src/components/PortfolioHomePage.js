@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Particles from 'react-particles-js';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 class PortfolioHomePage extends React.Component {
 
@@ -12,7 +13,7 @@ class PortfolioHomePage extends React.Component {
                     <h1>Hello, my name is Brandon Ore. <br /> I am a <span>Web Developer</span></h1>
                     <p>Available for hire! <br />Want to work with me? Click below.</p>
                     <Link to="/contact">
-                        <button className="btn-main2">Contact me <i className="fal fa-envelope home-arrow"></i></button>
+                        <button className="btn-main2">Contact me <FontAwesomeIcon icon={['fal', 'envelope']} /> </button>
                     </Link>
                 </div>
             <Particles width="90%"
