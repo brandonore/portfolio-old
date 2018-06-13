@@ -44,6 +44,16 @@ canvas, button {
     border-bottom: 1px solid lighten($nav-black, 10%);
 }
 
+#menu-content {
+    > a svg {
+        font-size: 2rem;
+        top: 0.3em;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+}
+
 .nav-bottom {
     position: absolute;
     bottom: 0;
@@ -62,7 +72,7 @@ canvas, button {
     text-align: center;
 }
 
-.nav-social i {
+.nav-social svg {
     color: $light-gray;
     font-size: $l-size;
     transition: all .2s linear;
@@ -76,9 +86,10 @@ canvas, button {
     text-align: center;
 }
 
-.nav-footer i {
+.nav-footer svg {
     color: $light-gray;
     transition: all .2s linear;
+    top: .05em;
 }
 
 .nav-footer a, .nav-social a {
@@ -86,7 +97,7 @@ canvas, button {
     padding: 0;
 }
 
-.nav-footer i:hover, .nav-social i:hover {
+.nav-footer svg:hover, .nav-social svg:hover {
     color: $main-pink;
     cursor: pointer;
 }
