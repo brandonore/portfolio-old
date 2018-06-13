@@ -1,6 +1,7 @@
 import React from 'react';
 import resume from '../../public/imgs/resume.png';
 import Particles from 'react-particles-js';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 class ResumePage extends React.Component {
 
@@ -12,7 +13,7 @@ class ResumePage extends React.Component {
                     <img src={resume} alt="personal resume"/>
                     <div className="resume-sidebar">
                         <p>PDF</p>
-                        <a href={require('../../public/imgs/resume.pdf')} download="resume.pdf"><i className="fas fa-download"></i></a>
+                        <a href={require('../../public/imgs/resume.pdf')} download="resume.pdf"><FontAwesomeIcon icon={['fas', 'download']} /></a>
                     </div>
                 </div>
                 <Particles width="90%"

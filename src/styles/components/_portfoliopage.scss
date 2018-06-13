@@ -106,16 +106,17 @@
 
 .clinks-container {
     padding: 60px 80px;
-    border: 1px solid $main-white;
+    border-right: 1px solid $main-white;
+    border-left: 1px solid $main-white;
 }
 
-.content-links i {
+.content-links svg {
     font-size: 3.2rem;
     transition: all .2s linear;
-    padding: 0 15px;
+    margin: 0 15px;
 }
 
-.content-links i:hover {
+.content-links svg:hover {
     opacity: .6;
     cursor: pointer;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 class ContactForm extends React.Component {
 
@@ -67,7 +68,7 @@ class ContactForm extends React.Component {
                     <label htmlFor="message">Message</label>
                 </div>
 
-                <button type="submit" className="btn-contact"><i className="fas fa-paper-plane"></i></button>
+                <button type="submit" className="btn-contact"><FontAwesomeIcon icon={['fas', 'paper-plane']} /></button>
             </form>
         )
     }

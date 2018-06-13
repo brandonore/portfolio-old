@@ -7,6 +7,7 @@ import twitter from '../../public/imgs/twitter.png';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import Particles from 'react-particles-js';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 let images = ['https://facebook.github.io/react/logo-og.png', 'http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg'];
 let captions = ['test1', 'test2'];
@@ -61,9 +62,9 @@ class PortfolioPage extends React.Component {
                                 <div className="overlay">
                                     <div className="content-links">
                                         <div className="clinks-container">
-                                            <a href="https://github.com/brandonore/chii"><i className="fab fa-github"></i></a>
-                                            <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}></i>
-                                            <i className="fas fa-link"></i>
+                                            <a href="https://github.com/brandonore/chii"><FontAwesomeIcon icon={['fab', 'github']} /></a>
+                                            <FontAwesomeIcon icon={['fas', 'image']} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
+                                            <FontAwesomeIcon icon={['fas', 'link']} />
                                         </div>
                                     </div>
                                 </div>
@@ -84,9 +85,9 @@ class PortfolioPage extends React.Component {
                                 <div className="overlay">
                                     <div className="content-links">
                                         <div className="clinks-container">
-                                            <a href="https://github.com/brandonore/aurora"><i className="fab fa-github"></i></a>
-                                            <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}></i>
-                                            <a href="https://github.com/brandonore/aurora/releases"><i className="fas fa-download"></i></a>
+                                            <a href="https://github.com/brandonore/aurora"><FontAwesomeIcon icon={['fab', 'github']} /></a>
+                                            <FontAwesomeIcon icon={['fas', 'image']} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
+                                            <a href="https://github.com/brandonore/aurora/releases"><FontAwesomeIcon icon={['fas', 'download']} /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -108,9 +109,9 @@ class PortfolioPage extends React.Component {
                                 <div className="overlay">
                                     <div className="content-links">
                                         <div className="clinks-container">
-                                            <a href="https://github.com/brandonore/expensify-app"><i className="fab fa-github"></i></a>
-                                            <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}></i>
-                                            <a href="http://expensify.brandonore.io"><i className="fas fa-link"></i></a>
+                                            <a href="https://github.com/brandonore/expensify-app"><FontAwesomeIcon icon={['fab', 'github']} /></a>
+                                            <FontAwesomeIcon icon={['fas', 'image']} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
+                                            <a href="http://expensify.brandonore.io"><FontAwesomeIcon icon={['fas', 'link']} /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -130,8 +131,8 @@ class PortfolioPage extends React.Component {
                                 <div className="overlay">
                                     <div className="content-links">
                                         <div className="clinks-container">
-                                            <a href="https://github.com/brandonore/Twitter-Interface"><i className="fab fa-github"></i></a>
-                                            <i className="fas fa-image" onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}></i>
+                                            <a href="https://github.com/brandonore/Twitter-Interface"><FontAwesomeIcon icon={['fab', 'github']} /></a>
+                                            <FontAwesomeIcon icon={['fas', 'image']} onClick={() => this.setState({ isOpen: true, photoIndex: 0 })} />
                                         </div>
                                     </div>
                                 </div>

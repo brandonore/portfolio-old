@@ -59,13 +59,13 @@
     font-weight: 400;
 }
 
-.resume-sidebar i {
+.resume-sidebar svg {
     color: $nav-black;
     font-size: $l-size;
     transition: all .2s linear;
 }
 
-.resume-sidebar i:hover {
+.resume-sidebar svg:hover {
     color: $main-pink;
     cursor: pointer;
 }

@@ -54,10 +54,17 @@ canvas, button {
     
 }
 
+.fa-file-pdf {
+    padding-right: 5px;
+    font-size: 2.7rem !important;
+    top: 0.1em !important;
+}
+
 .nav-bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
+    border-top: 1px solid lighten($nav-black, 10%);
 }
 
 .nav-social {
@@ -150,7 +157,6 @@ canvas, button {
 
 .nav-side-menu a:hover {
     border-left: 3px solid #FF416C;
-    // background: linear-gradient(to right, rgba(255, 65, 109, 0.61), rgba(255, 255, 255, 0));
 }
 
 .nav-bottom a:hover {
@@ -248,7 +254,7 @@ canvas, button {
         cursor: pointer;
         position: absolute;
         right: 10px;
-        top: 5px;
+        top: 8px;
         z-index: 10 !important;
         padding: 3px;
         color: #fff;

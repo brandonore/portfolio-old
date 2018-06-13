@@ -16,7 +16,7 @@ class Header extends React.Component {
                         <img className="home-img" src={cropped} alt="portfolio image" />
                         <div className="img-text"><h3>Brandon Ore</h3><p>{`{ Web Developer }`}</p></div>
                     </div>
-                    <i className="fas fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                    <FontAwesomeIcon icon={['fas', 'bars']} className="fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content" />
                     <div className="menu-list">
                         <ul id="menu-content" className="menu-content collapse out">
                             <NavLink to="/" activeClassName="is-active" exact={true}><FontAwesomeIcon icon={['fal', 'home']} />Home</NavLink>
