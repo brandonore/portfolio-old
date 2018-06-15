@@ -14,7 +14,7 @@ class Header extends React.Component {
                     <div className="nav-side-menu">
                     <div className="img-div">
                         <img className="home-img" src={cropped} alt="portfolio image" />
-                        <div className="img-text"><h3>Brandon Ore</h3><p>{`{ Web Developer }`}</p></div>
+                        <div className="img-text"><h3>Brandon Ore</h3><p>{`< Web Developer />`}</p></div>
                     </div>
                     <FontAwesomeIcon icon={['fas', 'bars']} className="fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content" />
                     <div className="menu-list">

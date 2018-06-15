@@ -12,15 +12,12 @@ class ContactPage extends React.Component {
                 <Particles width="90%"
                     params={{
                         particles: {
-                            color: {
-                                value: '#262626'
-                            },
                             number: {
                                 value: 100
                             },
                             line_linked: {
                                 opacity: 0.5,
-                                color: '#262626',
+                                color: '#9EA0AA',
                                 width: '1'
                             }
                         }

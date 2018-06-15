@@ -24,7 +24,7 @@ class PortfolioHomePage extends React.Component {
                         },
                         line_linked: {
                             opacity: 0.5,
-                            color: '#262626',
+                            color: '#9EA0AA',
                             width: '1'
                         }
                     }

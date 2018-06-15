@@ -11,10 +11,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     z-index: 2;
 }
 
-.resume-content h1 {
+.resume-div h1 {
     font-size: $xl-size;
     text-align: center;
     color: $nav-black;
@@ -24,7 +25,7 @@
     padding-bottom: 10px;
 }
 
-.resume-content h1:before {
+.resume-div h1:before {
     content: '';
     position: absolute;
     width: 6%;
@@ -33,17 +34,31 @@
     border-bottom: 2px solid $main-pink;
 }
 
-.resume-content img {
-    max-width: 1110px;
-    max-height: 1435px;
-    width: 65%;
-    height: 65%;
-    margin: 30px auto;
+.work-exp h2 {
+    font-size: $l-size;
+    font-weight: 300;
 }
 
-.resume-content p {
-    color: $nav-black;
-    text-align: center;
+.job-container {
+    // border: 1px solid red;
+    background: $nav-black;
+    color: $main-white;
+    margin: 20px auto;
+    padding: 20px 15px 10px 35px;
+    > h3 {
+        font-weight: 300;
+        > span {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: $main-pink;
+        }
+    }
+    > p {
+        font-weight: 500;
+    }
+    > ul li {
+        font-weight: 200;
+    }
 }
 
 .resume-sidebar {
@@ -76,10 +91,6 @@
 }
 
 @media (max-width: 1024px) {
-    .resume-content img {
-        width: 100%;
-    }
-
     .resume-sidebar {
         top: -3%;
         right: 0;

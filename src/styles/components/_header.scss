@@ -5,7 +5,6 @@ header {
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    color: $main-dark;
     position: relative;
     z-index: 2;
     transition: all .2s;
@@ -31,12 +30,16 @@ canvas, button {
 }
 
 .img-text h3 {
+    font-size: 2rem;
+    font-weight: 300;
     margin: 25px 0 -12px 0;
     padding: 0;
 }
 
 .img-text p {
     color: $light-gray;
+    font-size: $m-size;
+    margin-bottom: 0;
 }
 
 .menu-list {
@@ -208,19 +211,15 @@ canvas, button {
     text-align: center;
 }
 
-@media (max-height: 1024px) {
- 
-}
-
-@media (max-height: 800px) {
-    .github-content {
-        display: none;
-    }
+// @media (max-height: 800px) {
+//     .github-content {
+//         display: none;
+//     }
     
-    .trend {
-        display: none;
-    }
-}
+//     .trend {
+//         display: none;
+//     }
+// }
 
 @media (max-width: 767px) {
     header {
