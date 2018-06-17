@@ -10,7 +10,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     z-index: 2;
 }
@@ -34,13 +33,38 @@
     border-bottom: 2px solid $main-pink;
 }
 
-.work-exp h2 {
+.skills {
+    margin: 30px auto;
+}
+
+.work-exp, .skills {
+    width: 75%;
+}
+
+.skills-container {
+    display: flex;
+    margin: 20px auto;
+    padding: 20px 15px 10px 35px;
+    background: $nav-black;
+    > div {
+        width: 50%;
+        > p {
+            color: $main-white;
+        }
+    }
+    > .skills-about h3 {
+        font-weight: 600;
+        font-size: 2.2rem;
+        color: $main-pink;
+    }
+}
+
+.work-exp h2, .skills h2 {
     font-size: $l-size;
     font-weight: 300;
 }
 
 .job-container {
-    // border: 1px solid red;
     background: $nav-black;
     color: $main-white;
     margin: 20px auto;

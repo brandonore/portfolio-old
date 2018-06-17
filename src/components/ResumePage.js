@@ -2,6 +2,13 @@ import React from 'react';
 import resume from '../../public/imgs/resume.png';
 import Particles from 'react-particles-js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import BarChart from 'react-svg-bar-chart';
+
+const data = [];
+
+for(let x = 1; x <= 30; x++) {
+    data.push({x: x, y: Math.floor(Math.random() * 100)});
+}
 
 class ResumePage extends React.Component {
 
@@ -10,6 +17,22 @@ class ResumePage extends React.Component {
             <div className="resume-div"> 
                 <h1>Resume</h1>
                 <div className="resume-content">
+                    <div className="skills">
+                        <h2>Skills</h2>
+                        <div className="skills-container">
+                            <div className="skills-about">
+                                <h3>Skills & Experience</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim.</p>
+                            </div>
+                            <div className="skills-chart">
+                                <BarChart 
+                                    data={data}
+                                    onHover={this.handlePointHover}
+                                />
+                            </div>
+                        </div>
+                    </div>
                     <div className="work-exp">
                         <h2>Work History</h2>
                         <div className="job-container">
