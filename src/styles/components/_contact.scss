@@ -144,6 +144,19 @@ textarea:focus::placeholder {
     text-decoration: none;
 }
 
+#msg-box {
+    display: none;
+    background: none;
+    font-weight: 500;
+    color: $main-white;
+    padding: 10px;
+    text-align: center;
+    > svg {
+        top: 0;
+        margin-left: 8px;
+    }
+}
+
 @media (max-height: 800px) {
     #contact-form {
         width: 80%;

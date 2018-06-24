@@ -21,9 +21,14 @@ class ContactForm extends React.Component {
         }).then((response) => {
             if(response.data.msg === 'success') {
                 console.log('message sent!');
-                this.resetForm();
+                document.getElementById('msg-box').style.background = '#00c9b1';
+                document.getElementById('msg-box').innerText = 'Message Sent!';
+                document.getElementById('msg-box').style.display = 'block';
             } else if(response.data.msg === 'fail') {
                 console.log('message failed to send');
+                document.getElementById('msg-box').style.background = '#FF416C';
+                document.getElementById('msg-box').innerText = 'Message Failed! Please refresh and try again';
+                document.getElementById('msg-box').style.display = 'block';
             }
         });
     }
@@ -69,6 +74,7 @@ class ContactForm extends React.Component {
                 </div>
 
                 <button type="submit" className="btn-contact"><FontAwesomeIcon icon={['fas', 'paper-plane']} /></button>
+                <div id="msg-box"> <FontAwesomeIcon icon={['fas', 'check-circle']} /></div>
             </form>
         )
     }
