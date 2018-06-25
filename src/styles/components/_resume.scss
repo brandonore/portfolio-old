@@ -43,20 +43,59 @@
 
 .skills-container {
     display: flex;
+    justify-content: left;
     margin: 20px auto;
     padding: 20px 15px 10px 35px;
     background: $nav-black;
     > div {
-        width: 50%;
         > p {
             color: $main-white;
         }
     }
-    > .skills-about h3 {
+}
+
+.skills-about {
+    width: 25%;
+    margin-right: 10%;
+    > h3 {
         font-weight: 600;
         font-size: 2.2rem;
         color: $main-pink;
     }
+}
+
+.wt {
+    font-weight: 500;
+}
+
+.skills-list-container {
+    width: 25%;
+    margin-right: 10%;
+    > h3 {
+        text-align: left;
+        font-weight: 600;
+        font-size: 2.2rem;
+        color: $main-pink;
+    }
+}
+
+.skills-list {
+    display: flex;
+    justify-content: left;
+    color: $main-white;
+    // border: 1px solid red;
+    > .s1 {
+        margin-right: 40px;
+    }
+}
+
+.skills-chart {
+    width: 30%;
+    max-width: 310px;
+    display: flex; 
+    justify-content: left;
+    padding: 0;
+    margin: 0;
 }
 
 .work-exp h2, .skills h2 {
@@ -119,5 +158,23 @@
         top: -3%;
         right: 0;
         position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-list-container {
+        width: 100%
+    }
+
+    .skills-about {
+        width: 100%;
+    }
+
+    .skills-chart {
+        width: 100%;
     }
 }

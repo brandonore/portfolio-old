@@ -1,14 +1,14 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import resume from '../../public/imgs/resume.png';
 import Particles from 'react-particles-js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import BarChart from 'react-svg-bar-chart';
+import PropTypes from 'prop-types';
+import { VictoryPie } from 'victory';
 
-const data = [];
-
-for(let x = 1; x <= 30; x++) {
-    data.push({x: x, y: Math.floor(Math.random() * 100)});
-}
+const convertRemToPixels = (rem) => {
+    return rem * parseInt(getComputedStyle(document.documentElement).fontSize);
+} 
 
 class ResumePage extends React.Component {
 
@@ -22,13 +22,59 @@ class ResumePage extends React.Component {
                         <div className="skills-container">
                             <div className="skills-about">
                                 <h3>Skills & Experience</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim.</p>
+                                <p>I've mainly been focused more on the front-end side of the web using JS (ES5, ES6), HTML & CSS with a little
+                                bit of back-end with Node.js, Express and MongoDB.</p>
+                                <p>I've also been building small apps with ReactJS. I plan on picking up and learning Vue.js to compare with React.</p>
+                            </div>
+                            <div className="skills-list-container">
+                                <h3>Tech I've worked with:</h3>
+                                <div className="skills-list">
+                                        <div className="s1">
+                                            <ul>
+                                                <li>JavaScript</li>
+                                                <li>HTML 5</li>
+                                                <li>CSS 3 + SASS</li>
+                                                <li>jQuery</li>
+                                                <li>Node.js</li>
+                                                <li>Electron</li>
+                                                <li>Express</li>
+                                                <li>NPM + Yarn</li>
+                                            </ul>
+                                        </div>
+                                        <div className="s2">
+                                            <ul>
+                                                <li>React + Redux</li>
+                                                <li>Firebase</li>
+                                                <li>MongoDB</li>
+                                                <li>MySQL</li>
+                                                <li>Bootstrap</li>
+                                                <li>Wordpress</li>
+                                                <li>Jest</li>
+                                                <li>Gulp</li>
+                                            </ul>
+                                        </div>
+                                </div>
                             </div>
                             <div className="skills-chart">
-                                <BarChart 
-                                    data={data}
-                                    onHover={this.handlePointHover}
+                                <VictoryPie
+                                    padAngle={3}
+                                    innerRadius={75}
+                                    data={[
+                                        {x: 1, y: 9, label: 'HTML'},
+                                        {x: 2, y: 6, label: 'JavaScript'},
+                                        {x: 3, y: 8, label: 'CSS'},
+                                        {x: 4, y: 5, label: 'Node'},
+                                        {x: 5, y: 8, label: 'jQuery'}
+                                    ]}
+                                    colorScale={['#7f00ff', '#7200e5', '#6500cc', '#5800b2', '#4c0099']}
+                                    padding={{left: 60, right: 100}}
+                                    style={{
+                                        labels: {
+                                            paddingRight: '30px',
+                                            fill: '#FDFDFF',
+                                            fontSize: convertRemToPixels(2)
+                                        }
+                                    }}
                                 />
                             </div>
                         </div>
