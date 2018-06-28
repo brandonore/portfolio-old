@@ -66,7 +66,7 @@ class ResumePage extends React.Component {
                                         {x: 4, y: 5, label: 'Node'},
                                         {x: 5, y: 8, label: 'jQuery'}
                                     ]}
-                                    colorScale={['#7f00ff', '#7200e5', '#6500cc', '#5800b2', '#4c0099']}
+                                    colorScale={['#f73a4e', '#fc2572', '#f42b99', '#dc45c0', '#ae62e3']}
                                     padding={{left: 60, right: 100}}
                                     style={{
                                         labels: {

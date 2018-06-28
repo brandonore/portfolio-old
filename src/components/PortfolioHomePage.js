@@ -10,7 +10,7 @@ class PortfolioHomePage extends React.Component {
         return (
             <div className="home-div">
                 <div className="home-content">
-                    <h1>Hello, my name is Brandon Ore. <br /> I am a <span>Web Developer</span></h1>
+                    <h1>Hello, my name is Brandon Ore &<br /> I'm a <span>Web Developer</span></h1>
                     <p>Available for hire! <br />Want to work with me? Click below.</p>
                     <Link to="/contact">
                         <button className="btn-main2">Contact me <FontAwesomeIcon icon={['fal', 'envelope']} /></button>

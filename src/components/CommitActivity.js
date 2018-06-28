@@ -58,7 +58,7 @@ class CommitActivity extends React.Component {
                 autoDraw
                 autoDrawDuration={3000}
                 autoDrawEasing="ease-out"
-                data={[5,4,5,8,4,5,2]}
+                data={[5,4,5,8,4,5,2,6]}
                 gradient={['#fc00ff', '#00dbde']}
                 radius={12.6}
                 strokeWidth={2.3}

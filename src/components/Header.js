@@ -26,7 +26,7 @@ class Header extends React.Component {
                         </ul>
                     </div>
                     <div className="trend">
-                        <div className="commit-title">Commit activity</div>
+                        <div className="commit-title">Github commit activity</div>
                         <div className="trend-line">
                             <CommitActivity />
                         </div>
